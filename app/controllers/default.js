@@ -3,7 +3,7 @@ var express     = require('express'),
 	router      = express.Router();
 
 router.get('/add', function (req, res, next) {
-	MongoClient.connect('mongodb://mongo:27017/dockerTest', function(err, db) {
+	MongoClient.connect('mongodb://localhost:27017/dockerTest', function(err, db) {
 		if (err) {
 			return console.log(err);
 		}
